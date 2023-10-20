@@ -13,7 +13,7 @@
         <div id="signup">
             <form action="https://groups.io/g/andover-adult-chess/signup?u=5191250401499933553" method="post" id="signup-form" name="groupsio-embedded-subscribe-form" target="_blank">
                 <label for="email" id="signup-label">
-                    Subscribe via email:
+                    Subscribe to <span id="email-list">our email list</span>:
                 </label>
                 <br>
                 <input type="email" value="" name="email" class="email" id="signup-email" placeholder="Email Address" required="">
@@ -31,5 +31,9 @@
         <div id="calendar">
             <iframe src="https://calendar.google.com/calendar/embed?height=200&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showCalendars=0&showTabs=0&mode=AGENDA&showTz=0&showPrint=0&showDate=0&showNav=0&src=ZDhmNzM4NTRjYWU4N2VjZWJmYmJiMjYyMDZhMGE2YjYwYTY0ZWJjMzVmN2E0MGRjZmU5ZTlkYzYwNjAwMzliNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" style="border-width:0" width="400" height="200" frameborder="0" scrolling="no"></iframe>
         </div>
+        <script>
+            var e = document.getElementById('email-list');
+            e.innerText = 'andover-adult-chess' + String.fromCharCode(64) + 'groups' + String.fromCharCode(46) + 'io';
+        </script>
     </body>
 </html>
